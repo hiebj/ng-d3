@@ -42,7 +42,6 @@ module.run(['$templateCache', function ($templateCache) {
     '                dx="20"\n' +
     '                ng-attr-y="{{ yScale($index) }}"\n' +
     '                dy="6"\n' +
-    '                text-maxwidth="xScale(grade.score) - 90"\n' +
     '                anim-svg\n' +
     '                anim-duration="animDuration"\n' +
     '                anim-delay="$index * animDelay"\n' +
@@ -56,7 +55,6 @@ module.run(['$templateCache', function ($templateCache) {
     '                dx="-40"\n' +
     '                ng-attr-y="{{ yScale($index) }}"\n' +
     '                dy="6"\n' +
-    '                text-maxwidth="xScale(grade.score) - 90"\n' +
     '                anim-svg\n' +
     '                anim-duration="animDuration"\n' +
     '                anim-delay="$index * animDelay"\n' +
