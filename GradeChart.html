@@ -1,0 +1,60 @@
+<svg ng-attr-width="{{ width }}"
+    ng-attr-height="{{ height }}">
+    <g ng-attr-transform="translate({{ margin.left }}, {{ margin.top }})">
+        <g class="axis"
+            d3-component="d3.svg.axis"
+            d3c-scale="xScale"
+            d3c-orient="'top'"
+            d3c-tick-values="axisTicks">
+        </g>
+        <g class="grid"
+            d3-component="d3.svg.axis"
+            d3c-scale="xScale"
+            d3c-orient="'bottom'"
+            d3c-tick-format="''"
+            d3c-tick-size="gridTickSize"
+            d3c-tick-values="axisTicks">
+        </g>
+        <g class="grade" ng-repeat="grade in grades">
+            <rect class="grade-bar"
+                ng-class="grade.letter"
+                x="0"
+                ng-attr-y="{{ yScale($index) - (barHeight / 2) }}"
+                ng-attr-height="{{ barHeight }}"
+                width="0"
+                anim-svg
+                anim-duration="animDuration"
+                anim-delay="$index * animDelay"
+                anim-easing="'0.1 0.8 0.2 1'"
+                anim-attr-width="xScale(grade.score)" />
+            <text class="grade-student"
+                text-anchor="left"
+                ng-attr-x="{{ -xScale(grade.score) }}"
+                dx="20"
+                ng-attr-y="{{ yScale($index) }}"
+                dy="6"
+                text-maxwidth="xScale(grade.score) - 90"
+                anim-svg
+                anim-duration="animDuration"
+                anim-delay="$index * animDelay"
+                anim-easing="'0.1 0.8 0.2 1'"
+                anim-attr-x="0">
+                {{ grade.student }}
+            </text>
+            <text class="grade-score"
+                text-anchor="right"
+                x="0"
+                dx="-40"
+                ng-attr-y="{{ yScale($index) }}"
+                dy="6"
+                text-maxwidth="xScale(grade.score) - 90"
+                anim-svg
+                anim-duration="animDuration"
+                anim-delay="$index * animDelay"
+                anim-easing="'0.1 0.8 0.2 1'"
+                anim-attr-x="xScale(grade.score)">
+                {{ grade.score }}
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "name": "ng-d3",
+  "version": "0.0.0",
+  "description": "Example demonstrating the use of Angular templating to replace D3's DOM manipulation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiebj/ng-d3.git"
+  },
+  "author": "Jonathan Hieb",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "d3"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "d3": "^3.5.17",
+    "ng-anim-svg": "hiebj/ng-anim-svg",
+    "ng-d3-component": "hiebj/ng-d3-component",
+    "node-static": "^0.7.9"
+  },
+  "scripts": {
+    "start": "static"
+  }
+}

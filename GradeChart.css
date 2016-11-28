@@ -1,0 +1,48 @@
+grade-chart {
+  display: block;
+  padding: 38px 0 0;
+  max-width: 800px;
+}
+grade-chart svg {
+  display: block;
+}
+grade-chart .axis path,
+grade-chart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+grade-chart .axis .tick {
+  font-family: 'Roboto Slab';
+}
+grade-chart .grid .tick {
+  stroke: #CCCCCC;
+  opacity: 0.7;
+}
+grade-chart .grid path {
+  stroke-width: 0;
+  fill: none;
+}
+grade-chart .grade-bar {
+  shape-rendering: crispEdges;
+}
+grade-chart .grade-score,
+grade-chart .grade-student {
+  font-family: 'Roboto Slab';
+  font-size: 18px;
+  font-weight: bold;
+  fill: white;
+}
+grade-chart .A {
+  fill: #2ECC71;
+}
+grade-chart .B {
+  fill: #3498DB;
+}
+grade-chart .C,
+grade-chart .D {
+  fill: #FFCF4B;
+}
+grade-chart .F {
+  fill: #E74C3C;
+}

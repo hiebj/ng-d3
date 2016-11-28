@@ -1,0 +1,47 @@
+grade-chart {
+    display: block;
+    padding: 38px 0 0;
+    max-width: 800px;
+    svg {
+        display: block;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    .axis .tick {
+        font-family: 'Roboto Slab';
+    }
+    .grid .tick {
+        stroke: #CCCCCC;
+        opacity: 0.7;
+    }
+    .grid path {
+        stroke-width: 0;
+        fill: none;
+    }
+    .grade-bar {
+        shape-rendering: crispEdges;
+    }
+    .grade-score, .grade-student {
+        font-family: 'Roboto Slab';
+        font-size: 18px;
+        font-weight: bold;
+        fill: white;
+
+    }
+    .A {
+        fill: #2ECC71;
+    }
+    .B {
+        fill: #3498DB;
+    }
+    .C, .D {
+        fill: #FFCF4B;
+    }
+    .F {
+        fill: #E74C3C;
+    }
+}
