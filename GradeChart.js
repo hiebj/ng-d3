@@ -12,6 +12,7 @@ function GradeChart($window, grades) {
         $scope.animDelay = 200;
         $scope.grades = grades;
         processGrades();
+        $window.on('resize', processGrades);
 
         function processGrades() {
             $scope.width = $element[0].offsetWidth;
