@@ -31,6 +31,7 @@ function GradeChart($window, grades) {
                 $scope.yScale = d3.scale.linear()
                     .domain([ 0, $scope.grades.length - 1 ])
                     .range([ halfBar + 3, interiorHeight - halfBar ]);
+            }
         }
     }
 
